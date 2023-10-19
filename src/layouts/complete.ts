@@ -60,6 +60,12 @@ export function formatCompleteLayout(
   // Set section facts
   section.facts = [
     new Fact(
+      "Workflow:",
+      "`" + process.env.GITHUB_WORKFLOW + "`"
+    ),
+
+  run-name
+    new Fact(
       "Event type:",
       "`" + process.env.GITHUB_EVENT_NAME?.toUpperCase() + "`"
     ),
